@@ -1,0 +1,29 @@
+package com.example.vendingmachine;
+
+import java.math.BigInteger;
+
+public class Menu {
+    private String name;
+    private BigInteger price;
+
+    public Menu(String name, BigInteger price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public BigInteger getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigInteger price) {
+        this.price = price;
+    }
+}
