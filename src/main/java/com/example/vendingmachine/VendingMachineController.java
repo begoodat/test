@@ -11,7 +11,7 @@ import java.util.Map;
 @RequestMapping("/api")
 public class VendingMachineController {
     @Autowired
-    VendingMachineService vendingMachineService;
+    MenuService vendingMachineService;
 
     @PostMapping("/add")
     public String add(Menu menu){

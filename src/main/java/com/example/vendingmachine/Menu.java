@@ -1,8 +1,12 @@
 package com.example.vendingmachine;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigInteger;
 
+@Entity
 public class Menu {
+    @Id
     private String name;
     private BigInteger price;
 

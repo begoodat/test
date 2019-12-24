@@ -17,6 +17,16 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    //  TODO    palletX에서 가져온 의존성..WalletServer에 있는 의존성 무슨 차이? 확실한건 월렛서버 의존성이 @Entity까지 포함되었다는것.
+2    // spring data repository
+    //compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.1.2.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //  h2
+    testRuntimeOnly('com.h2database:h2')
+    // doc
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+
 }
 
 test {
